@@ -1,0 +1,161 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: FFFDFD;
+    box-shadow: 0px 4px 15px rgba(167, 167, 167, 0.5);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img#logo {
+    max-width: 30px;
+}
+
+.logo span#textlogo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.logo a{
+    color: black;
+}
+
+.navigasi {
+    display: flex;
+}
+
+.navigasi .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.navigasi img {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+/* =========== Mengatur Gambar Hiasan =================== */
+
+main {
+    background-image: url('images/bacground.png');
+    width: 100%;
+    height: 91vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hiasan img#bullat {
+    max-width: 400px;
+    position: absolute;
+    right: -0px;
+    /* top: -50px; */
+}
+
+.hiasan img#hiasanAtas {
+    max-width: 300px;
+    position: absolute;
+    top: -10px;
+}
+
+.hiasan img#hiasanBawah {
+    max-width: 200px;
+    position: absolute;
+    bottom: -0px;
+    left: -5px;
+}
+
+/* =========== Konten Dasboard =========== */
+
+.konten_dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.konten_text{
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.konten_text h1{
+    font-size: 70px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.konten_text h2{
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.konten_text p{
+    font-size: 19.5px;
+}
+
+
+.gambar_dashboard{
+    z-index: 1;
+}
+
+.gambar_dashboard img{
+    max-width: 600px;
+}
+
+/* ============== Mengatur Button ============ */
+.item_button{
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.item_button button{
+    padding: 10px 60px;
+    margin: 0px 10px;
+    border-radius: 20px 20px 0px 0px;
+    border: none;
+    font-size: 25px;
+}
+
+.item_button button.tua{
+    background-color: #2077B9;
+    color: white;
+}
+
+.item_button button.muda{
+    background-color: #3FAAD7;
+    color: white;
+}
+
+
+.item_button button:hover{
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    /* padding: 20px 60px; */
+}
+
+
