@@ -30,7 +30,7 @@ nav {
     margin-left: 5px;
 }
 
-.logo a{
+.logo a {
     color: black;
 }
 
@@ -64,7 +64,6 @@ main {
     max-width: 400px;
     position: absolute;
     right: -0px;
-    /* top: -50px; */
 }
 
 .hiasan img#hiasanAtas {
@@ -82,7 +81,7 @@ main {
 
 /* =========== Konten Dasboard =========== */
 
-.konten_dashboard{
+.konten_dashboard {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -90,38 +89,38 @@ main {
     margin-top: 50px;
 }
 
-.konten_text{
+.konten_text {
     z-index: 1;
     margin-top: 20px;
 }
 
-.konten_text h1{
+.konten_text h1 {
     font-size: 70px;
     margin: 0px;
     padding: 0px;
 }
 
-.konten_text h2{
+.konten_text h2 {
     font-size: 50px;
     margin: 0px;
     padding: 0px;
 }
 
-.konten_text p{
+.konten_text p {
     font-size: 19.5px;
 }
 
 
-.gambar_dashboard{
+.gambar_dashboard {
     z-index: 1;
 }
 
-.gambar_dashboard img{
+.gambar_dashboard img {
     max-width: 600px;
 }
 
 /* ============== Mengatur Button ============ */
-.item_button{
+.item_button {
     z-index: 1;
     position: absolute;
     bottom: 0px;
@@ -130,10 +129,9 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    
 }
 
-.item_button button{
+.item_button button {
     padding: 10px 60px;
     margin: 0px 10px;
     border-radius: 20px 20px 0px 0px;
@@ -141,21 +139,127 @@ main {
     font-size: 25px;
 }
 
-.item_button button.tua{
+.item_button button.tua {
     background-color: #2077B9;
     color: white;
 }
 
-.item_button button.muda{
+.item_button button.muda {
     background-color: #3FAAD7;
     color: white;
 }
 
 
-.item_button button:hover{
+.item_button button:hover {
     box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
     font-size: 24px;
-    /* padding: 20px 60px; */
 }
 
 
+/* ================= UMKM ============== */
+
+button.tua.tidak_active,
+button.muda.tidak_active {
+    align-self: flex-end;
+}
+
+button.tua.active#umkm {
+    padding: 20px 60px;
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.konten_umkm {
+    display: flex;
+    flex-direction: row;
+}
+
+.Lapak {
+    max-width: 10%;
+    height: 91vh;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Lapak .penjual {
+    align-self: center;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 0.5px black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Lapak .penjual img {
+    max-width: 60%;
+}
+
+.jajanan_umkm {
+    width: 85%;
+    height: 80vh;
+    z-index: 1;
+    margin: auto;
+}
+
+.jajanan_umkm h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 30px 0px;
+    text-decoration: underline;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.card p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+}
+
+.card button {
+    margin-top: 12px;
+    border: none;
+    background-color: white;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ================= UMKM ============== */
