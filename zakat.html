@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Ramadan</title>
+    <title>Website Ramadan_Zakat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,7 +12,7 @@
     <nav>
         <div class="logo">
             <img src="images/Random Symboles 3.png" alt="Logo" id="logo">
-            <span id="textlogo"><a href="">Ramadhan Keren</a></span>
+            <span id="textlogo"><a href="index.html">Ramadhan Keren</a></span>
         </div>
         <div class="navigasi">
             <div class="item">
@@ -39,23 +39,31 @@
             <img src="images/Hiasan atas.png" alt="" id="hiasanAtas">
             <img src="images/Hiasan bawah.png" alt="" id="hiasanBawah">
         </div>
-        <div class="konten_dashboard">
-            <div class="konten_text">
-                <h1>Ramadhan 2024</h1>
-                <h2>1445 Hijriah</h2>
-                <p>kami adalah platform peyedia kebutuhan hari raya anda, <br> berbagai kemudahan telah kami hadirkan yang dikemas pada <br> pada sebuah website. </p>
-                <p>Berbagai fitur dapat digunakan cukup hanya dengan 1 
-                    platform saja.</p>
-            </div>
-            <div class="gambar_dashboard">
-                <img src="images/Gambar_dashboard.png" alt="Gambar dashboard">
-            </div>
+        <div class="konten_zakat">
+            <h1>Form Zakat</h1>
+            <p>Untuk berzakat silahkan masukan data diri yang benar pada form berikut ini</p>
+
+            <form action="">
+                <input type="text" placeholder="Nama">
+                <input type="text" placeholder="Alamat Tinggal">
+                <input type="text" placeholder="Nomor Handphone">
+                <select>
+                    <option value="">Laki-Laki</option>
+                    <option value="">Perempuan</option>
+                </select>
+                <div class="konfirmasi">
+                    <input type="checkbox" class="checkbox">
+                    <span>Bersedia dihubungi melalui whatsapp untuk berniat zakat</span>
+                </div>
+                <button type="button">Kirim</button>
+            </form>
         </div>
+
         <div class="item_button">
-            <a href="umkm.html"><button type="button" class="tua">UMKM</button></a>
-            <a href="zakat.html"><button type="button" class="muda">ZAKAT</button></a>
-            <a href="donasi.html"><button type="button" class="tua">DONASI</button></a>
-            <a href="qurban.html"><button type="button" class="muda">QURBAN</button></a>
+            <a href="umkm.html"><button type="button" class="tua tidak_active">UMKM</button></a>
+            <a href="zakat.html"><button type="button" class="muda active">ZAKAT</button></a>
+            <a href="donasi.html"><button type="button" class="tua tidak_active">DONASI</button></a>
+            <a href="qurban.html"><button type="button" class="muda tidak_active">QURBAN</button></a>
         </div>
     </main>
 </body>

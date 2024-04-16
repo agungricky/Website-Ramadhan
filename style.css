@@ -129,6 +129,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: flex-end;
 }
 
 .item_button button {
@@ -160,10 +161,15 @@ main {
 
 button.tua.tidak_active,
 button.muda.tidak_active {
-    align-self: flex-end;
+    /* align-items: flex-start; */
 }
 
-button.tua.active#umkm {
+button.tua.active {
+    padding: 20px 60px;
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+button.muda.active {
     padding: 20px 60px;
     box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -260,6 +266,58 @@ button.tua.active#umkm {
     margin-right: auto;
 }
 
-
-
 /* ================= UMKM ============== */
+
+
+
+/* ================= Zakat ============= */
+
+.konten_zakat, .konten_donasi {
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+
+}
+
+.konten_zakat h1,
+.konten_zakat p {
+    margin: 10px;
+    padding: 0px;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+form input,
+form select {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+form button {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: #2077B9;
+    color: white;
+}
+
+form .konfirmasi {
+    display: flex;
+    align-items: center;
+}
+
+form .konfirmasi .checkbox {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+/* ================= Zakat ============= */
